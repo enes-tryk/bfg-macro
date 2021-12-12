@@ -12,18 +12,18 @@ while state:
     while not keyboard.is_pressed('alt+a'):
 
         # Select the deployable
-        pyautogui.click(x=592, y=709)
+        pyautogui.click(x=650, y=700)
 
         # Place the deployable
-        pyautogui.click(x=405, y=340)
-        pyautogui.click(x=105, y=340)
+        pyautogui.click(x=400, y=350)
+        pyautogui.click(x=100, y=350)
 
         # Select the fist
-        pyautogui.click(x=492, y=709)
+        pyautogui.click(x=550, y=700)
 
         # Destroy the deployable
-        pyautogui.click(x=405, y=340, clicks=hit, interval=0.21)
-        pyautogui.click(x=105, y=340, clicks=hit, interval=0.21)
+        pyautogui.click(x=400, y=350, clicks=hit, interval=0.21)
+        pyautogui.click(x=100, y=350, clicks=hit, interval=0.21)
 
     else:
         state = False

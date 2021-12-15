@@ -1,6 +1,7 @@
 import keyboard, pyautogui, time
 from art import *
 
+print('\ngithub.com/enes-tryk/')
 print(text2art('BFG-MACRO'))
 
 res = int(input('\nSELECT YOUR SCREEN RESOLUTION:\n[1] 1920:1080\n[2] 1280:768\n> '))

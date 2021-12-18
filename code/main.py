@@ -75,7 +75,8 @@ while state:
             break
 
     else:
-        restart, state = input('\nSTOPPED THE PROGRAM. CONTINUE WITH THE SAME SETTINGS?\n[1] CONTINUE\n[2] CHANGE SETTINGS\n[3] EXIT PROGRAM> '), False
+        restart = int(input('\nSTOPPED THE PROGRAM. CONTINUE WITH THE SAME SETTINGS?\n[1] CONTINUE\n[2] CHANGE SETTINGS\n[3] EXIT PROGRAM\n> '))
+        state = False
 
         if restart == 1:
             print('\nSTARTING IN 5 SECONDS...\n[HOLD ALT+A TO STOP]'), time.sleep(5)

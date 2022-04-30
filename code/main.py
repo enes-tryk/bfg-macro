@@ -1,4 +1,6 @@
-import keyboard, pyautogui, time
+import keyboard
+import pyautogui
+import time
 from art import *
 
 print('\ngithub.com/enes-tryk/')
@@ -16,32 +18,32 @@ while state:
     while not keyboard.is_pressed('alt+a'):
 
         if pos == 1 and aim == 1 and res == 1:
-            pyautogui.click(x=1175, y=1000)
-            pyautogui.click(x=400, y=555)
-            pyautogui.click(x=775, y=1000)
-            pyautogui.click(x=400, y=555, clicks=hit, interval=0.25)
+            pyautogui.click(x=1080, y=1020)
+            pyautogui.click(x=650, y=500)
+            pyautogui.click(x=840, y=1020)
+            pyautogui.click(x=650, y=500, clicks=hit, interval=0.25)
 
         elif pos == 1 and aim == 2 and res == 1:
-            pyautogui.click(x=1175, y=1000)
-            pyautogui.click(x=400, y=555)
-            pyautogui.click(x=325, y=555)
-            pyautogui.click(x=775, y=1000)
-            pyautogui.click(x=400, y=555, clicks=hit, interval=0.25)
-            pyautogui.click(x=325, y=555, clicks=hit, interval=0.25)
+            pyautogui.click(x=1080, y=1020)
+            pyautogui.click(x=650, y=500)
+            pyautogui.click(x=350, y=500)
+            pyautogui.click(x=840, y=1020)
+            pyautogui.click(x=650, y=500, clicks=hit, interval=0.25)
+            pyautogui.click(x=350, y=500, clicks=hit, interval=0.25)
 
         elif pos == 2 and aim == 1 and res == 1:
-            pyautogui.click(x=1175, y=1000)
-            pyautogui.click(x=1505, y=555)
-            pyautogui.click(x=775, y=1000)
-            pyautogui.click(x=1505, y=555, clicks=hit, interval=0.25)
+            pyautogui.click(x=1080, y=1020)
+            pyautogui.click(x=1250, y=500)
+            pyautogui.click(x=840, y=1020)
+            pyautogui.click(x=1250, y=500, clicks=hit, interval=0.25)
 
         elif pos == 2 and aim == 2 and res == 1:
-            pyautogui.click(x=1175, y=1000)
-            pyautogui.click(x=1505, y=555)
-            pyautogui.click(x=1580, y=555)
-            pyautogui.click(x=775, y=1000)
-            pyautogui.click(x=1505, y=555, clicks=hit, interval=0.25)
-            pyautogui.click(x=1580, y=555, clicks=hit, interval=0.25)
+            pyautogui.click(x=1080, y=1020)
+            pyautogui.click(x=1250, y=500)
+            pyautogui.click(x=1550, y=500)
+            pyautogui.click(x=840, y=1020)
+            pyautogui.click(x=1250, y=500, clicks=hit, interval=0.25)
+            pyautogui.click(x=1550, y=500, clicks=hit, interval=0.25)
 
         elif pos == 1 and aim == 1 and res == 2:
             pyautogui.click(x=800, y=700)
@@ -75,7 +77,8 @@ while state:
             break
 
     else:
-        restart = int(input('\nSTOPPED THE PROGRAM. CONTINUE WITH THE SAME SETTINGS?\n[1] CONTINUE\n[2] CHANGE SETTINGS\n[3] EXIT PROGRAM\n> '))
+        restart = int(input('\nSTOPPED THE PROGRAM. CONTINUE WITH THE SAME SETTINGS?\n[1] CONTINUE\n[2] CHANGE '
+                            'SETTINGS\n[3] EXIT PROGRAM\n> '))
         state = False
 
         if restart == 1:
